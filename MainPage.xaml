@@ -36,11 +36,11 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
             <Label Text="Here is a decimal value, using StringFormat 0:F2"/>
-            <Entry Text="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},Path=Valor,StringFormat='{0:F2}' }"/>
+            <Entry Text="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},Path=MyDecimalValue,StringFormat='{0:F2}' }"/>
             <Label Text="Here is a decimal value, using StringFormat 0:c"/>
-            <Entry Text="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},Path=Copia1,StringFormat='{0:c}' }"/>
+            <Entry Text="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},Path=Copy1,StringFormat='{0:c}' }"/>
             <Label Text="Here is a decimal value, without StringFormat, maui is converting it to INT and my binded value is now multiplied by 10" BackgroundColor="Red" TextColor="White" Padding="10"/>
-            <Entry Text="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},Path=Copia2}"/>
+            <Entry Text="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},Path=Copy2}"/>
         </VerticalStackLayout>
     </ScrollView>
 
